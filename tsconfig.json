@@ -1,6 +1,12 @@
-{
+{ // JS_config_ts_version
   "compilerOptions": {
-    "target": "es5",
+    "baseUrl": "src", // baseURL 을 넣어주면 Root 경로로 사용할 수 있게되어, 절대경로를 사용할 수 있다.
+//    "paths": {
+//      "@components/*": ["components/*"],
+//      "@utils/*": ["utils/*"]
+//    },
+    "target": "esnext", // 최신 문법을 사용하려면 esnext로 설정한다. 기본값은 "es5"로, 컴파일 결과물이 es5 호환 코드로 만들어진다.
+    // 반드시 esnext로 설정할 필요는 없지만, esnext로 설정하면 최신 문법만 다루기 때문에 성능이 좋아질 수 있다.
     "lib": [
       "dom",
       "dom.iterable",
