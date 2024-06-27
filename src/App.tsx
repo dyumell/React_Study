@@ -1,8 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import './HeaderContent'
-import HeaderContent from "./HeaderContent";
+import './components/HeaderContent'
+import HeaderContent from "./components/HeaderContent";
+import MyComponent from "./components/MyComponent";
+import ButtonStyled from "./components/ButtonStyled"; // 이거 IDE의 CodeLintr 가 태그만 넣어도 자동으로 임포트해줬다. 짱이다
 
 
 // function App() { // 이 함수 객체가 React App 페이지를 채우고 있다.
@@ -28,7 +30,10 @@ import HeaderContent from "./HeaderContent";
 function App() {
   return (
       <div className="App">
-        <HeaderContent/>
+          <MyComponent/>
+          <ButtonStyled>일반 버튼</ButtonStyled>
+          <ButtonStyled primary>primary</ButtonStyled>
+        {/*<HeaderContent/>*/}
       </div>
   );
 }

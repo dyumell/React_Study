@@ -11,7 +11,7 @@
   "rules": {
     // 여기에 사용자 정의 규칙을 추가합니다.
     "react/prop-types": "off",
-    "no-unused-vars": "off"
+    "no-unused-vars": "off" // 원래 off 인데, error 로 바꾸니까 CodeLintr 에서만 에러가 발생한다
   },
   "settings": {
     "react": {
